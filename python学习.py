@@ -194,7 +194,59 @@ numbers=list(range(2,11,2))
 print(numbers)
 squares=[]
 for value in range(1,11):
-    square=value**2
-    squares.append(square)
+    squares.append(value**2)
 print(squares)
-print('今天是2月13日，我在Python编写了200条代码！这是《Python学习》的第200条代码，希望继续创造纪录！')
+print('今天是2022年2月13日，我在Python编写了200条代码！这是《Python学习》的第200条代码，希望继续创造纪录！')
+
+#1000000个数字
+for value in range(1,1000000001):
+    print(value)
+
+#1000000求和
+numbers=list(range(1,1000001))
+print(sum(numbers))
+
+#1-20奇数
+numbers=list(range(1,21,2))
+for number in numbers:
+    print(number)
+
+#3的倍数
+numbers=list(range(3,31,3))
+for number in numbers:
+    print(number)
+
+#1-10立方数
+numbers=[]
+for number in range(1,11):
+    number_3=number**3
+    numbers.append(number_3)
+print(numbers)
+
+#立方解析
+numbers=[number**3 for number in range(1,11)]
+print(numbers)
+
+#切片
+players=['charles','maetina','michael','florence','eli']
+print(players[0:3])
+print(players[0:4])
+print(players[1:4])
+print(players[:4])
+print(players[2:])
+print(players[-3:])
+
+#遍历切片
+print('Here are the first three players on my team:')
+for player in players[:3]:
+    print(player.title())
+
+#复制列表
+my_foods=['pizza','falafel','carrot cake']
+friend_foods=my_foods[:]
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
